@@ -6,7 +6,15 @@ Mostly taken from [John Papa's style guide](https://github.com/johnpapa/angular-
 
 ## Installation
 
+### Manually
+
 Copy to your Packages folder and restart Sublime.
+
+### Package Control
+
+Use `Add Repository` command and add `https://github.com/josduj/sublime-angularjs-snippets`.
+
+By running `Install Package` command you should now be able to find `sublime-angularjs-snippets` package.
 
 ## Usage
 
