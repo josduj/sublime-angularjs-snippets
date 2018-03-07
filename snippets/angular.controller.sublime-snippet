@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[angular
+	.module('${1:module}')
+	.controller('${2:myController}', ${2:myController})
+
+${2:myController}.\$inject = [${3/(\$(\w+)|\w+)/'$1'/g}]
+
+function ${2:myController}(${3}) {
+
+	const self = this
+
+}
+]]></content>
+	<tabTrigger>ngcontroller</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

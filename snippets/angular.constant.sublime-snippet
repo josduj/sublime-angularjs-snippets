@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[angular
+	.module('${1:module}')
+	.constant('${2:name}', ${3:value})
+]]></content>
+	<tabTrigger>ngconstant</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

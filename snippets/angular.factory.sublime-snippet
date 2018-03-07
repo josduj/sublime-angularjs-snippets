@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[angular
+	.module('${1:module}')
+	.factory('${2:myService}', ${2:myService})
+
+${2:myService}.\$inject = [${3/(\$(\w+)|\w+)/'$1'/g}]
+
+function ${2:myService}(${3}) {
+
+	return {
+		${4:func},
+	}
+
+	function ${4:func}(){
+		${5}
+	}
+
+}
+]]></content>
+	<tabTrigger>ngfactory, ngservice</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

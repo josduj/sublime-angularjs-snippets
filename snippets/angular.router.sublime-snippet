@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[angular
+	.module('${1:module}')
+	.config(${2:myRouter})
+
+${2:myRouter}.\$inject = [${3/(\$(\w+)|\w+)/'$1'/g}]
+
+function ${2:myRouter}(${3:\$stateProvider}) {
+
+	\$stateProvider.state('${4}', {
+		url: '/${5}',${6}
+	})
+
+}
+]]></content>
+	<tabTrigger>ngrouter</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

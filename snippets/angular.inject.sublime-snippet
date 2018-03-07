@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[${1:myController}.\$inject = [${2/(\$(\w+)|\w+)/'$1'/g}]
+
+function ${1:myController}(${2}) {
+	${3}
+}
+]]></content>
+	<tabTrigger>nginject</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

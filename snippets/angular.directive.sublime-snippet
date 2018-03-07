@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[angular
+	.module('${1:module}')
+	.directive('${2}', ${2}Directive)
+
+${2}Directive.\$inject = [${3/(\$(\w+)|\w+)/'$1'/g}]
+
+function ${2}Directive(${3}) {
+
+	return {
+		restrict: 'A',
+		link: link,
+		scope: {},
+	}
+
+	function link(scope, element, attrs) {
+		${4}
+	}
+
+}
+]]></content>
+	<tabTrigger>ngdirective</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[angular
+	.module('${1:module}')
+	.component('${2:myComponent}', {
+		controller: ${2:myComponent}Ctrl,
+		templateUrl: '${2/([A-Z][a-z\d]+)/\L-$1/g}.template.html',
+		bindings: {
+			${4}
+		},
+	})
+
+${2:myComponent}Ctrl.\$inject = [${3/(\$(\w+)|\w+)/'$1'/g}]
+
+function ${2:myComponent}Ctrl(${3}) {
+
+	const self = this
+
+	self.\$onInit = () => {
+		${5}
+	}
+
+}
+]]></content>
+	<tabTrigger>ngcomponent</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[angular
+	.module('${1:module}')
+	.provider('${2:myValue}', ${2:myValue}Provider)
+
+${2:myValue}Provider.\$inject = [${3/(\$(\w+)|\w+)/'$1'/g}]
+
+function ${2:myValue}Provider(${3}) {
+
+	const self = this
+
+	self.\$get = () => {
+		return {${4}}
+	}
+
+}
+]]></content>
+	<tabTrigger>ngprovider</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[const dependencies = [${2}]
+
+angular
+	.module('${1:module}', dependencies)
+]]></content>
+	<tabTrigger>ngmodule</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>

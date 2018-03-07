@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[angular
+	.module('${1:module}')
+	.filter('${2:myFilter}', ${2:myFilter}Filter)
+
+function ${2:myFilter}Filter() {
+
+	return function(${3}) {
+		return ${3}${4}
+	}
+
+}
+]]></content>
+	<tabTrigger>ngfilter</tabTrigger>
+	<scope>text.plain, source.js</scope>
+</snippet>
